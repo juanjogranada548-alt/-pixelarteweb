@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🐳Blessd - El Bendito🐳</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- clave para móviles -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: url('fondo-blessd.jpg') no-repeat center center;
+      background-size: cover; /* se adapta a cualquier pantalla */
+      color: #fff;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6); /* oscurece la imagen para legibilidad */
+      z-index: -1;
+    }
+    header { text-align: center; padding: 40px 20px; }
+    header h1 { font-size: 2em; color: #FFD700; margin: 0; }
+    header p { font-size: 1.1em; color: #eee; }
+    nav {
+      background: rgba(0,0,0,0.4);
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+    nav a:hover { color: #0073ff; }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background: rgba(0,0,0,0.3);
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    h2 { color: #0066ff; margin-bottom: 15px; }
+    ul { text-align: left; }
+    iframe {
+      border-radius: 12px;
+      margin-top: 15px;
+      width: 100%; /* se adapta al móvil */
+    }
+    footer {
+      background: rgba(0,0,0,0.4);
+      text-align: center;
+      padding: 15px;
+      color: #0a78e6;
+      font-size: 0.9em;
+    }
+    /* Ajustes para pantallas pequeñas */
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8em; }
+      nav a { display: inline-block; margin: 5px; font-size: 0.8em; }
+      section { padding: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Blessd - El Bendito</h1>
+    <p>Reguetón colombiano con impacto mundial</p>
+  </header>
+
+  <nav>
+    <a href="#bio">Biografía</a>
+    <a href="#carrera">Carrera</a>
+    <a href="#conciertos">Conciertos</a>
+    <a href="#musica">Música</a>
+  </nav>
+
+  <section id="bio">
+    <h2>Biografía</h2>
+    <p>Stiven Mesa Londoño, nacido en Itagüí en 2000, es uno de los artistas urbanos más influyentes de Colombia. 
+    Conocido como Blessd, pasó de cantar en buses a llenar estadios internacionales.</p>
+  </section>
+
+  <section id="carrera">
+    <h2>Carrera y logros</h2>
+    <ul>
+      <li>Álbum debut: <em>Hecho en Medellín</em> (2021).</li>
+      <li>Éxito mundial con “Medallo”, más de 400 millones de reproducciones.</li>
+      <li>Colaboraciones con Karol G, Ryan Castro y Anuel AA.</li>
+      <li>Giras en Estados Unidos, Canadá y Europa.</li>
+    </ul>
+  </section>
+
+  <section id="conciertos">
+    <h2>Conciertos recientes</h2>
+    <p>En 2026 llenó el Estadio Atanasio Girardot con un show de cinco horas y más de 15 artistas invitados.</p>
+  </section>
+
+  <section id="musica">
+    <h2>Música</h2>
+    <p>Escucha aquí la canción directamente desde Spotify:</p>
+    <iframe style="border-radius:12px" 
+      src="https://open.spotify.com/embed/track/7sRXb5IgYWwVv1DaavHSNs?utm_source=generator" 
+      height="152" frameborder="0" allowfullscreen="" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    </iframe>
+
+    <p>O escucha música de fondo en este reproductor:</p>
+    <audio controls autoplay loop>
+      <source src="blessd.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+  </section>
+
+  <footer>
+    <p>solo bleesd 💎 el bendito 💎</p>
+  </footer>
+</body>
+</html>
